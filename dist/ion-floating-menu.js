@@ -6,7 +6,7 @@
  * Material UI-like Floating Action Button and Menu for Ionic applications.
  *
  * By @ennedigi
- * 
+ *
  * Licensed under the MIT license. Please see LICENSE for more information.
  *
  */
@@ -140,7 +140,7 @@
                     textClass: '@?'},
                 template:
                 '<li ng-click="click()" ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
-                '<span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span><i class="icon menu-icon" ng-class="{ \'{{icon}}\' : true}" ng-style="{\'color\': iconColor }"></i>' +
+                '<span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span><i class="material-icons">{{icon}}</i>' +
                 '</li>',
                 replace: true,
                 controller: ionFloatingItem
