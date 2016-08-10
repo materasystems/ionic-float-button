@@ -1,0 +1,21 @@
+{
+  "name": "ionic-float-button",
+  "homepage": "https://github.com/drdpedroso/ionic-float-button",
+  "authors": [
+    "Eduardo Pedroso <eduardo.pedroso@matera.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
