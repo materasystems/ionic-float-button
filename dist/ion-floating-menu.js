@@ -83,7 +83,7 @@
                     hasFooter: '=?'},
                 template: '<ul id="floating-button" ng-style="{\'bottom\' : \'{{bottomValue}}\' }">' +
                 '<li ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
-                '<a ng-click="click()"><i class="icon menu-icon" ng-class="{ \'{{icon}}\' : true}" ng-style="{\'color\': iconColor }"></i></a>' +
+                '<i ng-style="{\'color\': iconColor }" ng-click="click()" class="material-icons">{{icon}}</i>' +
                 '</li>' +
                 '</ul>',
                 replace: true,
@@ -91,7 +91,7 @@
                 controller: ionFloatingButton
             };
         })
-        .directive('ionFloatingMenu', function ($compile) {
+        .directive('ionFloatingMenu', function () {
             return {
                 restrict: 'E',
                 scope: {
