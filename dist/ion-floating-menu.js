@@ -80,10 +80,11 @@
                     buttonClass: '@?',
                     icon: '@?',
                     iconColor: '@?',
-                    hasFooter: '=?'},
+                    hasFooter: '=?',
+                    isIconImage: '@?'},
                 template: '<ul id="floating-button" ng-style="{\'bottom\' : \'{{bottomValue}}\' }">' +
                 '<li ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
-                '<i ng-style="{\'color\': iconColor }" ng-click="click()" class="material-icons">{{icon}}</i>' +
+                '<i ng-style="{\'color\': iconColor }" ng-click="click()" class="material-icons-custom" ng-bind-html="icon"></i>' +
                 '</li>' +
                 '</ul>',
                 replace: true,
@@ -147,3 +148,4 @@
             };
         });
 })();
+
