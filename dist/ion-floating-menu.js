@@ -90,6 +90,16 @@
                 '</ul>',
                 replace: true,
                 transclude: true,
+                link: function (scope, element, attrs, ctrl, transclude)
+                {
+                    scope.$watch('hasFooter',function(newVal){
+                        if(!newVal){
+                            element.addClass('is-offline');
+                        } else {
+                            element.removeClass('is-offline');
+                        }
+                    });
+                },
                 controller: ionFloatingButton
             };
         })
