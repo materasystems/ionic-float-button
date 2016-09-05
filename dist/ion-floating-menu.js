@@ -67,6 +67,7 @@
     function ionFloatingItem($scope){
         $scope.buttonColor = $scope.buttonColor || '#2AC9AA';
         $scope.iconColor = $scope.iconColor || '#fff';
+        $scope.isNotMaterial = JSON.parse($scope.isNotMaterial || false); debugger;
     }
 
     angular.module('ion-floating-menu', [])
@@ -149,10 +150,12 @@
                     buttonClass: '@?',
                     iconColor: '@?',
                     text: '@?',
-                    textClass: '@?'},
+                    textClass: '@?',
+                    isNotMaterial: '=?'},
                 template:
                 '<li ng-click="click()" ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
-                '<span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span><i class="material-icons">{{icon}}</i>' +
+                '<span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span>' +
+                '<i ng-class="{\'material-icons\' : !isNotMaterial}" ng-bind-html="icon"></i>' +
                 '</li>',
                 replace: true,
                 controller: ionFloatingItem
