@@ -67,7 +67,7 @@
     function ionFloatingItem($scope){
         $scope.buttonColor = $scope.buttonColor || '#2AC9AA';
         $scope.iconColor = $scope.iconColor || '#fff';
-        $scope.isNotMaterial = JSON.parse($scope.isNotMaterial || false); debugger;
+        $scope.isNotMaterial = JSON.parse($scope.isNotMaterial || false);
     }
 
     angular.module('ion-floating-menu', [])
