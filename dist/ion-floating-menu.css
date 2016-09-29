@@ -161,28 +161,28 @@
 }*/
 
 #floating-menu > li  {
-    transition: all .2s;
-    -webkit-transition: all .2s;
-    -moz-transition: .2s;
+    transition: all .1800ms;
+    -webkit-transition: all .1800ms;
+    -moz-transition: .1800ms;
 }
 
 #floating-menu.active > li:nth-child(1) {
     transition-delay: 0ms; -webkit-transition-delay: 0ms; top: -70px;
 }
 #floating-menu.active > li:nth-child(2) {
-    transition-delay: 50ms; -webkit-transition-delay: 50ms; top: -140px;
+    transition-delay: 30ms; -webkit-transition-delay: 30ms; top: -140px;
 }
 #floating-menu.active > li:nth-child(3){
-    transition-delay: 100ms; -webkit-transition-delay: 100ms; top: -210px;
+    transition-delay: 80ms; -webkit-transition-delay: 80ms; top: -210px;
 }
 #floating-menu.active > li:nth-child(4){
-    transition-delay: 150ms; -webkit-transition-delay: 150ms; top: -280px;
+    transition-delay: 120ms; -webkit-transition-delay: 120ms; top: -280px;
 }
 #floating-menu.active > li:nth-child(5){
-    transition-delay: 200ms; -webkit-transition-delay: 200ms; top: -350px;
+    transition-delay: 170ms; -webkit-transition-delay: 170ms; top: -350px;
 }
 #floating-menu.active > li:nth-child(6){
-    transition-delay: 250ms; -webkit-transition-delay: 250ms; top: -420px;
+    transition-delay: 220ms; -webkit-transition-delay: 220ms; top: -420px;
 }
 
 .is-offline {
