@@ -153,7 +153,7 @@
                     textClass: '@?',
                     isNotMaterial: '=?'},
                 template:
-                '<li ng-click="click()" ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
+                '<li ng-click="click()" ng-class="buttonClass" ng-style="{\'background-color\': buttonColor, \'color\': iconColor }">' +
                 '<span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span>' +
                 '<i ng-class="{\'material-icons\' : !isNotMaterial}" ng-bind-html="icon"></i>' +
                 '</li>',
