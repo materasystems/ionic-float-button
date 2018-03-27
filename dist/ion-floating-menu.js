@@ -151,11 +151,14 @@
                     iconColor: '@?',
                     text: '@?',
                     textClass: '@?',
+                    iconImagePath: '@?',
+                    iconImageClass: '@?',
                     isNotMaterial: '=?'},
                 template:
                 '<li ng-click="click()" ng-class="buttonClass" ng-style="{\'background-color\': buttonColor, \'color\': iconColor }">' +
                 '<span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span>' +
-                '<i ng-class="{\'material-icons\' : !isNotMaterial}" ng-bind-html="icon"></i>' +
+                '<img ng-if="iconImagePath" class="menu-icon" ng-class="iconImageClass" ng-src="{{iconImagePath}}"/>' +
+                '<i ng-if="!iconImagePath" class="icon menu-icon" ng-class="{\'material-icons\' : !isNotMaterial}" ng-bind-html="icon"></i>' +
                 '</li>',
                 replace: true,
                 controller: ionFloatingItem
